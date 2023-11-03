@@ -38,7 +38,7 @@ public class Main {
                         .filter(student -> getAverageGrade(student) > 4.5)
                         .sorted(Comparator.comparingDouble(Student::getAverageGrade).reversed())
                         .limit(5)
-                        .collect(Collectors.toList());
+                        .toList();
 
                 // Выводим результат
                 filteredStudents.forEach(student -> System.out.println(student.getName()));
