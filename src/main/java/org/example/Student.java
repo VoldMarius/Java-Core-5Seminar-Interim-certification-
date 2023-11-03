@@ -3,9 +3,6 @@ package org.example;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import java.util.AbstractMap;
-import java.util.Comparator;
-import java.util.stream.Stream;
 
 
 import java.util.List;
@@ -19,9 +16,7 @@ public class Student   {
     private List<Double> Grade;
     private String Specialty;
 
-    public Student() {
 
-    }
 
 
     static double getAverageGrade(Student student) {
